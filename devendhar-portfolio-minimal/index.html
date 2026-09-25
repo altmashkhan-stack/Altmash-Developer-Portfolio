@@ -1,0 +1,1747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Devender - Full-Stack Web Developer & UI/UX-focused Product Builder. Designing and developing premium websites, SaaS platforms, AI-powered applications, dashboards, and modern digital experiences."
+    />
+    <meta
+      name="keywords"
+      content="Devender, Devender Gopagoni, Full-Stack Developer, UI/UX Product Builder, React.js, Next.js, TypeScript, Node.js, AI Applications, SaaS, Portfolio"
+    />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Altmash - Full-Stack Web Developer & UI/UX Product Builder</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Swiper Bundle -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <!-- Responsive Custom Tweaks -->
+    <style>
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      /* Hero banner responsiveness */
+      @media (max-width: 991px) {
+        .banner-three-thumb {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          text-center: center;
+        }
+        .banner-three-thumb img {
+          max-height: 450px;
+          object-fit: contain;
+        }
+        .tw-container-1800-px {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+        .about-three-counter {
+          margin-top: 1.5rem;
+        }
+        .footer-three-area {
+          padding-top: 60px !important;
+        }
+      }
+      @media (max-width: 575px) {
+        .banner-three-thumb img {
+          max-height: 320px;
+        }
+        .tw-main-menu-mobile a {
+          font-size: 1.4rem !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="tw-magic-cursor">
+    <!--==================== Preloader Start ====================-->
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path
+          id="preloaderSvg"
+          d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"
+        ></path>
+      </svg>
+      <div class="preloader-heading">
+        <div class="load-text">
+          <span>A</span>
+          <span>L</span>
+          <span>T</span>
+          <span>M</span>
+          <span>A</span>
+          <span>S</span>
+          <span>H</span>
+          <!-- <span>R</span> -->
+        </div>
+      </div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!--==================== Begin Magic Cursor Start ====================-->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!--==================== Begin Magic Cursor End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <svg
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 6L6 1L1 6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- ==================== Offcanvus Mobile Menu Start Here ==================== -->
+    <div class="tw-offcanvas-2-area p-relative">
+      <div class="tw-offcanvas-2-bg is-left left-box"></div>
+      <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+      <div class="tw-offcanvas-2-wrapper">
+        <div class="tw-offcanvas-2-left left-box">
+          <div
+            class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center"
+          >
+            <div class="twoffcanvas__logo">
+              <a class="logo-1" href="index.html">
+                <h3 class="text-white fw-bold tw-mb-0">ALTMASH</h3>
+              </a>
+            </div>
+            <div class="tw-offcanvas-2-close d-md-none text-end">
+              <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
+                <span class="text">
+                  <span class="text-white">close</span>
+                </span>
+                <span class="d-inline-block">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)"
+                        fill="currentcolor"
+                      />
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="tw-main-menu-mobile tw-mt-8">
+            <nav>
+              <ul class="d-flex flex-column tw-gap-5 list-unstyled tw-mb-0">
+                <li><a href="#about" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">About</a></li>
+                <li><a href="#expertise" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">Core Expertise</a></li>
+                <li><a href="#projects" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">Projects</a></li>
+                <li><a href="#what-i-build" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">What I Build</a></li>
+                <li><a href="#contact" class="text-white text-uppercase fw-bold hover-text-main-two-600 tw-transition-3" style="color: #ffffff !important; font-size: 1.8rem; font-weight: 700; text-decoration: none; display: inline-block; white-space: nowrap;">Connect</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="tw-offcanvas-2-right right-box d-none d-md-block p-relative"
+        >
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn">
+              <span class="text">
+                <span>close</span>
+              </span>
+              <span class="d-inline-block">
+                <span>
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.80859 9.80762L28.1934 28.1924"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.80859 28.1924L28.1934 9.80761"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100"
+          >
+            <div class="twoffcanvas__contact-info">
+              <div class="twoffcanvas__contact-title">
+                <h5 class="text-white tw-mb-1">Altmash</h5>
+                <p class="text-neutral-400 tw-text-sm tw-mb-4">Full-Stack Web Developer & UI/UX Product Builder</p>
+              </div>
+              <div class="twoffcanvas__social-info tw-mt-4">
+                <h6 class="text-white tw-mb-3">Connect Across Platforms</h6>
+                <ul class="d-flex flex-wrap tw-gap-3 list-unstyled">
+                  <li>
+                    <a class="tw-text-sm text-white border border-neutral-700 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-main-two-600 hover-text-white tw-transition-3" href="https://github.com/devendharoff" target="_blank">
+                      <i class="ph ph-github-logo"></i> GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tw-text-sm text-white border border-neutral-700 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-main-two-600 hover-text-white tw-transition-3" href="https://www.linkedin.com/in/devender-goud-033875338/" target="_blank">
+                      <i class="ph ph-linkedin-logo"></i> LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tw-text-sm text-white border border-neutral-700 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-main-two-600 hover-text-white tw-transition-3" href="https://www.instagram.com/devendharoff/?hl=en" target="_blank">
+                      <i class="ph ph-instagram-logo"></i> Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tw-text-sm text-white border border-neutral-700 tw-px-3 tw-py-2 tw-rounded-md d-inline-flex align-items-center tw-gap-2 hover-bg-main-two-600 hover-text-white tw-transition-3" href="https://www.instagram.com/connects.ai" target="_blank">
+                      <i class="ph ph-sparkle"></i> Connects AI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Offcanvus Mobile Menu End Here ==================== -->
+
+    <!-- ==================== Header Start Here ==================== -->
+    <header
+      class="header header-two header-three tw-transition-all tw-z-99 position-relative"
+    >
+      <div class="container tw-container-1800-px">
+        <nav
+          class="d-flex align-items-center justify-content-between position-relative"
+        >
+          <!-- Logo Start -->
+          <div class="header-three-logo tw-rounded-md">
+            <a href="index.html" class="link text-decoration-none">
+              <h2 class="text-heading fw-bold tw-mb-0 tracking-wider">ALTMASH</h2>
+            </a>
+          </div>
+          <!-- Logo End  -->
+
+          <!-- Quick Navigation Links Start -->
+          <div class="header-menu d-none d-lg-block">
+            <div class="main-menu">
+              <nav class="tw-main-menu-content">
+                <ul class="d-flex tw-gap-8 list-unstyled tw-mb-0 align-items-center">
+                  <li><a href="#about" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">About</a></li>
+                  <li><a href="#expertise" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">Expertise</a></li>
+                  <li><a href="#projects" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">Projects</a></li>
+                  <li><a href="#what-i-build" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">What I Build</a></li>
+                  <li><a href="#contact" class="text-black fw-bold text-decoration-none tw-text-lg hover-text-main-two-600" style="color: #111111 !important; font-size: 1.1rem; font-weight: 700;">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- Navigation Links End -->
+
+          <!-- Header Right start -->
+          <div class="header-right d-flex align-items-center tw-gap-705">
+            <!-- Menu Button Start  -->
+            <div class="header-three-menu">
+              <button
+                class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md"
+              >
+                <span
+                  ><img
+                    class="tw-transition-3"
+                    src="assets/images/icons/header-three-toggle.svg"
+                    alt="toggle"
+                /></span>
+              </button>
+            </div>
+            <!-- Menu Button End  -->
+
+            <!-- Header Button Start  -->
+            <div class="header-three-button d-none d-md-block">
+              <a
+                class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
+                href="#contact"
+              >
+                Let's Talk
+                <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
+              </a>
+            </div>
+            <!-- Header Button End  -->
+          </div>
+
+          <!-- Header Right End  -->
+        </nav>
+      </div>
+    </header>
+    <!-- ==================== Header End Here ==================== -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Banner / Hero Section -->
+        <section class="banner-three-area">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="banner-three-wrapper position-relative z-1">
+                  <div
+                    class="banner-three-man position-absolute start-50 translate-middle-x"
+                  >
+                    <img
+                      src="assets/images/icons/IMG_7713.PNG"
+                      alt="Devender"
+                    />
+                  </div>
+                  <h1 class="banner-three-title text-black tw-mb-30 text-uppercase">
+                    ALTMASH
+                  </h1>
+                  <div
+                    class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1"
+                  >
+                    <div
+                      class="banner-three-left tw-rounded-lg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
+                        Hi, I'm Altmash <br />
+                        <span class="text-main-two-600">Full-Stack Web Developer</span> & UI/UX Product Builder
+                      </h2>
+                      <div class="banner-three-list">
+                        <ul>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                            /></span>
+                            React.js & Next.js Ecosystem
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                            /></span>
+                            Node.js, Express & Supabase
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                            /></span>
+                            AI Agents & Automation Systems
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                            /></span>
+                            UI/UX & Product Design
+                          </li>
+                          <li
+                            class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
+                          >
+                            <span
+                              ><img
+                                src="assets/images/icons/banner-three-pluse.svg"
+                                alt="plus"
+                            /></span>
+                            SaaS Platforms & Dashboards
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-center text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h3 class="banner-three-center-title tw-text-120">
+                        Designing and developing premium websites, SaaS platforms & AI applications.
+                      </h3>
+                      <div class="banner-three-button">
+                        <a
+                          class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                          href="#projects"
+                        >
+                          explore projects
+                          <span
+                            class="tw-hover-btn-circle-dot bg-main-two-600"
+                          ></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-right tw-rounded-lg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4 position-relative"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                        >
+                          <span
+                            class="purecounter font-heading"
+                            data-purecounter-duration="2"
+                            data-purecounter-end="6"
+                          ></span
+                          >+
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                        >
+                          Live Production Projects
+                        </p>
+                      </div>
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1"
+                        >
+                          <span
+                            class="purecounter font-heading"
+                            data-purecounter-duration="2"
+                            data-purecounter-end="100"
+                          ></span
+                          >%
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-white"
+                        >
+                          Client Satisfaction & Scalability
+                        </p>
+                      </div>
+                      <div
+                        class="banner-three-counter-item tw-rounded-md tw-mb-4"
+                      >
+                        <h4
+                          class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                        >
+                          Full-Stack
+                        </h4>
+                        <p
+                          class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                        >
+                          Frontend, Backend & AI Automation
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1"
+                    >
+                      <img
+                        src="assets/images/shapes/banner-three-shape.png"
+                        alt="shape"
+                      />
+                      <div class="banner-three-carcel-shape">
+                        <div><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-three-area py-120 position-relative z-1">
+          <div class="container tw-container-1800-px">
+            <div class="about-three-top position-relative z-1">
+              <div class="row justify-content-center tw-mb-21">
+                <div class="col-xl-10">
+                  <div class="text-center">
+                    <h2
+                      class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
+                    >
+                      I specialize in designing and developing premium websites, SaaS platforms, AI-powered applications, dashboards, and modern digital experiences.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div
+                    class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      class="tw-anim-img w-100 tw-rounded-lg"
+                      data-animate="true"
+                      src="assets/images/icons/IMG_7531.PNG"
+                      alt="Devender About"
+                      style="object-fit: cover; max-height: 650px;"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div
+                    class="about-three-right"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <div>
+                      <p class="tw-text-xl tw-mb-8">
+                        Hi, I'm <strong>Altmash</strong>, a Full-Stack Web Developer and UI/UX-focused Product Builder.
+                      </p>
+                      <p class="tw-text-xl tw-mb-8">
+                        My approach combines clean design, scalable architecture, and high performance to create products that not only look great but also solve real business problems.
+                      </p>
+                      <p class="tw-text-xl tw-mb-10">
+                        I work with startups, founders, agencies, and businesses to transform ideas into production-ready applications.
+                      </p>
+                    </div>
+                    <div class="about-three-counter d-inline-block">
+                      <div class="tw-hover-btn-wrapper d-inline-block">
+                        <a
+                          class="tw-btn-circle tw-hover-btn-item tw-hover-btn lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
+                          style="width: 110px !important; height: 110px !important;"
+                          href="#contact"
+                        >
+                          <span
+                            class="d-flex flex-column justify-content-center text-center p-1"
+                          >
+                            <span
+                              class="text-heading fw-bold text-uppercase"
+                              style="font-size: 0.75rem; line-height: 1.1; font-weight: 700; display: block;"
+                              >Build Your</span
+                            >
+                            <span
+                              class="text-main-two-600 fw-bold text-uppercase"
+                              style="font-size: 0.75rem; line-height: 1.1; font-weight: 700; display: block;"
+                              >Product <i class="ph ph-arrow-up-right"></i></span
+                            >
+                          </span>
+                          <i class="tw-btn-circle-dot bg-main-two-600"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="about-three-wrap-shape d-flex justify-content-between tw-mt-12"
+              >
+                <div
+                  class="banner-three-counter-item tw-rounded-md position-relative"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <h2
+                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  >
+                    Frontend & Backend
+                  </h2>
+                  <p
+                    class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                  >
+                    React, Next.js, Node.js, Supabase, Postgres
+                  </p>
+                </div>
+                <div
+                  class="banner-three-counter-item tw-rounded-md position-relative"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <h2
+                    class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
+                  >
+                    AI & Automation
+                  </h2>
+                  <p
+                    class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
+                  >
+                    OpenAI, Chatbots, Agents, Workflows & CRMs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="about-three-shape position-absolute start-0 w-100"
+              src="assets/images/shapes/about-three-shape.png"
+              alt="shape"
+            />
+          </div>
+        </section>
+
+        <!-- ======================== Marquee section start =========================== -->
+        <div class="marquee tw-pt-17 bg-black">
+          <div
+            class="marquee_left d-flex align-items-center justify-content-between tw-gap-16 overflow-hidden"
+          >
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                CORE EXPERTISE <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
+              >
+                FULL-STACK DEVELOPMENT <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                AI & AUTOMATION <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
+              >
+                UI/UX PRODUCT DESIGN <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2
+                class="marquee-two-title marquee-three-title text-uppercase text-white"
+              >
+                SAAS PLATFORMS <span class="text-white">-</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== Marquee section end =========================== -->
+
+        <!-- Core Expertise Section -->
+        <section id="expertise" class="service-three-area bg-black pt-120 tw-pb-15">
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-12">
+                <div class="tw-mb-15">
+                  <h2 class="text-white tw-text-15 text-center font-heading">Core Expertise</h2>
+                </div>
+                <div class="service-three-wrapper">
+                  <!-- 01. Frontend -->
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >01
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">Frontend Engineering</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">React.js</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Next.js</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">TypeScript</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">JavaScript (ES6+)</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">HTML5 & CSS3</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Tailwind CSS</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-three-thumb1.png"
+                          alt="Frontend"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 02. Backend -->
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="300"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >02
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">Backend & Databases</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Node.js</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Express.js</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">REST APIs</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Supabase</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">PostgreSQL</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-three-thumb2.png"
+                          alt="Backend"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 03. AI & Automation -->
+                  <div
+                    class="service-three-single"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="400"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >03
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">AI & Automation Solutions</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">OpenAI Integration</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">AI Chatbots</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">WhatsApp Automation</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">AI Agents</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">AI Workflows & CRM</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-three-thumb3.png"
+                          alt="AI Automation"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 04. Modern Digital Engineering -->
+                  <div
+                    class="service-three-single ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="500"
+                  >
+                    <div
+                      class="service-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="service-three-content d-flex tw-gap-14">
+                        <div>
+                          <span
+                            class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3"
+                            >04
+                            <img
+                              class="tw-transition-3"
+                              src="assets/images/icons/service-three-arrow.svg"
+                              alt="arrow"
+                          /></span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2
+                              class="service-three-title tw-text-15 text-white tw-mb-4"
+                            >
+                              <a href="#expertise">Product Capabilities & Platforms</a>
+                            </h2>
+                          </div>
+                          <div class="portfolio-list portfolio-two-list">
+                            <ul class="d-flex tw-gap-205 flex-wrap">
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Responsive UI/UX</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">SEO & Performance</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Authentication Systems</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">Dashboard Development</span>
+                              </li>
+                              <li>
+                                <span class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 border border-neutral-700 tw-px-3 tw-py-1 tw-rounded-md">WordPress & Shopify</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="service-three-thumb">
+                        <img
+                          src="assets/images/thumbs/service-three-thumb4.png"
+                          alt="Platforms"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="portfolio-three-area py-120 position-relative z-1">
+          <div class="portfolio-three-shape position-absolute top-0 z-n1">
+            <h3 class="portfolio-three-shape-title">works</h3>
+          </div>
+          <div class="container tw-container-1800-px">
+            <div class="row tw-mb-15">
+              <div class="col-xl-12 text-center">
+                <h2 class="tw-text-15 text-heading font-heading">Featured Live Projects</h2>
+                <p class="tw-text-xl text-neutral-600">Production-ready applications built for scale, performance, and clean UX</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div
+                  class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
+                >
+                  <!-- Project 1: Personal Portfolio -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://devendhargopagoni.netlify.app/"
+                              target="_blank"
+                              >1. Personal Portfolio</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            A modern portfolio website showcasing work, skills, and services.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">React</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Next.js</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">TypeScript</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a
+                            class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                            href="https://devendhargopagoni.netlify.app/"
+                            target="_blank"
+                            title="Live Demo"
+                            ><i class="ph ph-arrow-up-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://devendhargopagoni.netlify.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-three-thumb1.jpg"
+                          alt="Personal Portfolio"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 2: NoMoreDMS -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://nomoredms.vercel.app/"
+                              target="_blank"
+                              >2. NoMoreDMS Platform</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            Platform eliminating unnecessary DMs by giving creators & businesses a single hub to share resources, links, and products.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">React</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Next.js</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Node.js</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Supabase</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://nomoredms.vercel.app/"
+                          target="_blank"
+                          title="Live Demo"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://nomoredms.vercel.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-three-thumb2.jpg"
+                          alt="NoMoreDMS"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 3: EduCalc -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://educalc-expert0509.vercel.app/"
+                              target="_blank"
+                              >3. EduCalc Platform</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            Educational platform helping students access academic tools through a clean, responsive interface.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">React</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Next.js</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">TypeScript</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://educalc-expert0509.vercel.app/"
+                          target="_blank"
+                          title="Live Demo"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://educalc-expert0509.vercel.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-three-thumb3.jpg"
+                          alt="EduCalc"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 4: PostLearn -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://postlearn-lake.vercel.app/"
+                              target="_blank"
+                              >4. PostLearn Platform</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            Modern learning platform focused on delivering educational content through an intuitive interface.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">React</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Next.js</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://postlearn-lake.vercel.app/"
+                          target="_blank"
+                          title="Live Demo"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://postlearn-lake.vercel.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-three-thumb4.jpg"
+                          alt="PostLearn"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 5: Maatoori Akshith Portfolio -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://maatoori-akshith.netlify.app/"
+                              target="_blank"
+                              >5. Maatoori Akshith Portfolio</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            Personal portfolio website built for a client to establish a strong, professional digital presence.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">React</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">Next.js</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://maatoori-akshith.netlify.app/"
+                          target="_blank"
+                          title="Live Demo"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://maatoori-akshith.netlify.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-two-thumb3.jpg"
+                          alt="Maatoori Akshith Portfolio"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 6: Cozy Cafe Website -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://cozy-cafa1.netlify.app/"
+                              target="_blank"
+                              >6. Cozy Cafe Website</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            Bespoke cafe website featuring online menus, ambiance galleries, and table reservation flows.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">HTML5</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">CSS3</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">JavaScript</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://cozy-cafa1.netlify.app/"
+                          target="_blank"
+                          title="Live Demo"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://cozy-cafa1.netlify.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-two-thumb1.jpg"
+                          alt="Cozy Cafe Website"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 7: TeamZ -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://teamz09.netlify.app/"
+                              target="_blank"
+                              >7. TeamZ Business Website</a
+                            >
+                          </h2>
+                          <p class="tw-text-lg text-neutral-600 tw-mb-4">
+                            Corporate/business website designed to present company services professionally with responsive UI.
+                          </p>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">HTML5</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">CSS3</span></li>
+                            <li><span class="text-uppercase text-heading tw-text-xs fw-semibold border border-neutral-300 tw-px-2 tw-py-1 tw-rounded">JavaScript</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://teamz09.netlify.app/"
+                          target="_blank"
+                          title="Live Demo"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      data-cursor="Live Demo"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://teamz09.netlify.app/"
+                        target="_blank"
+                        ><img
+                          class="w-100 tw-rounded-lg"
+                          src="assets/images/thumbs/portfolio-two-thumb2.jpg"
+                          alt="TeamZ"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What I Build Section -->
+        <div id="what-i-build" class="feature-three-area py-120 position-relative z-1 bg-black">
+          <div class="container tw-container-1800-px">
+            <div class="row tw-mb-15">
+              <div class="col-12 text-center">
+                <h2 class="tw-text-15 text-white font-heading">What I Build</h2>
+                <p class="tw-text-xl text-neutral-400">Tailored digital products crafted for businesses, founders, and startups</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="feature-three-wrapper hover__widget">
+                  <!-- 01 Corporate Websites -->
+                  <div
+                    class="feature-three-single current hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >01</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Corporate</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Corporate Websites & Enterprise Solutions</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >High Impact</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/feature-three-thumb1.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 02 Business Websites -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >02</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Business</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Business Websites & Service Platforms</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Professional</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb1.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 03 Portfolio Websites -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >03</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Portfolio</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Portfolio Websites & Client Branding</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Personalized</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb2.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 04 Landing Pages -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >04</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >Landing Pages</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >High-Converting Landing Pages & Launch Sites</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Conversion Focused</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb3.jpg"
+                    ></div>
+                  </div>
+
+                  <!-- 05 SaaS Applications -->
+                  <div
+                    class="feature-three-single hover__reveal-item"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      class="feature-three-item d-flex justify-content-between align-items-center"
+                    >
+                      <div class="feature-three-left d-flex align-items-center">
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
+                            >05</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
+                            >SaaS Apps</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                            >Scalable SaaS Platforms & Web Dashboards</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <span
+                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
+                          >Full-Stack & AI</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="hover__reveal-bg bg-img"
+                      data-background-image="assets/images/thumbs/portfolio-two-thumb4.jpg"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer / Contact Section -->
+        <section
+          id="contact"
+          class="footer-three-area pt-120 tw-pb-10 position-relative z-1 bg-black"
+        >
+          <div class="container tw-container-1800-px">
+            <div class="row pb-120 justify-content-center text-center">
+              <div class="col-xl-8 col-lg-10">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <span class="text-main-two-600 text-uppercase fw-bold tracking-wider tw-text-sm border border-neutral-800 tw-px-4 tw-py-2 tw-rounded-md">CONNECT ACROSS PLATFORMS</span>
+                  <h2 class="tw-text-15 text-white font-heading tw-mt-4 tw-mb-4">Let's Build Something Great Together</h2>
+                  <p class="tw-text-xl text-neutral-400 tw-mb-10">Explore my work, code repositories, and updates across GitHub, LinkedIn, and Instagram.</p>
+                  
+                  <div class="d-flex align-items-center justify-content-center flex-wrap tw-gap-4">
+                    <a class="tw-text-lg text-white bg-neutral-900 border border-neutral-800 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-border-main-two-600 hover-bg-main-two-600 tw-transition-3" href="https://github.com/altmashkhan-stack" target="_blank">
+                      <i class="ph ph-github-logo tw-text-2xl"></i> <span class="fw-semibold">GitHub</span>
+                    </a>
+                    <a class="tw-text-lg text-white bg-neutral-900 border border-neutral-800 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-border-main-two-600 hover-bg-main-two-600 tw-transition-3" href="https://www.linkedin.com/in/devender-goud-033875338/" target="_blank">
+                      <i class="ph ph-linkedin-logo tw-text-2xl"></i> <span class="fw-semibold">LinkedIn</span>
+                    </a>
+                    <a class="tw-text-lg text-white bg-neutral-900 border border-neutral-800 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-border-main-two-600 hover-bg-main-two-600 tw-transition-3" href="https://www.instagram.com/khn_altmashh?stkn=MTY2N3gwdGF4Y3hlcQ==" target="_blank">
+                      <i class="ph ph-instagram-logo tw-text-2xl"></i> <span class="fw-semibold">Instagram</span>
+                    </a>
+                    <a class="tw-text-lg text-white bg-neutral-900 border border-neutral-800 tw-px-6 tw-py-4 tw-rounded-lg d-inline-flex align-items-center tw-gap-3 hover-border-main-two-600 hover-bg-main-two-600 tw-transition-3" href="https://WA.me/919120972220" target="_blank">
+                      <i class="ph ph-sparkle tw-text-2xl"></i> <span class="fw-semibold">Wathsapp</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-three-border tw-px-18 tw-mb-10">
+            <div class="container-fluid gx-0">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div
+                    class="footer-three-middile d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <h4 class="tw-text-2xl text-white tw-mb-2">
+                        Quick Links
+                      </h4>
+                      <ul class="d-flex tw-gap-4 flex-wrap list-unstyled">
+                        <li>
+                          <a class="tw-text-lg text-white" href="#about">About Me</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#expertise">Expertise</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#what-i-build">What I Build</a>
+                        </li>
+                        <li>
+                          <a class="tw-text-lg text-white" href="#contact">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <a
+                        class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle"
+                        href="#"
+                        ><i class="ph ph-arrow-up"></i
+                      ></a>
+                    </div>
+                    <div
+                      class="text-lg-end"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    >
+                      <h4 class="tw-text-2xl text-white tw-mb-2">
+                        Altmash Portfolio
+                      </h4>
+                      <p class="tw-text-lg text-white">
+                        © 2026 Altmash. All rights reserved.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container tw-container-1800-px">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="footer-three-bottom text-center">
+                    <h5 class="footer-three-bottom-title text-white text-center">
+                      ALTMASH
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="position-absolute top-0 start-0 z-n1"
+              src="assets/images/shapes/footer-three-bg-shape.png"
+              alt="shape"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- phosphor Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="assets/js/aos.js"></script>
+    <!-- magnific popup js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- marquee -->
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <!-- counterup js -->
+    <script src="assets/js/purecounter.js"></script>
+    <!-- swiper bundle js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- gsap js -->
+    <script src="assets/js/gsap/gsap.js"></script>
+    <!-- Scroll plugin -->
+    <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <!-- Scroll smoother -->
+    <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+    <!-- split text -->
+    <script src="assets/js/gsap/gsap-split-text.js"></script>
+    <!-- chroma js -->
+    <script src="assets/js/gsap/chroma.min.js"></script>
+
+    <!-- custom GSAP -->
+    <script src="assets/js/slider-active.js"></script>
+    <!-- custom GSAP -->
+    <script src="assets/js/custom-gsap.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <!-- cursor js -->
+    <script src="assets/js/tw-cursor.js"></script>
+  </body>
+</html>
